@@ -1,6 +1,6 @@
 # Çoklu Haberleşme Protokollerini Destekleyen Kontrol Kartı (LoRa_MuPr-VAF4751)
 
-Bu proje, çoklu haberleşme protokollerini destekleyerek özellikli bir kontrol kartı geliştirmeyi amaçlamaktadır. Proje kapsamında, LoRaWAN'a benzer bir ağ yapısı kurularak, birden fazla iletişim kartı kullanılarak bir mesh ağı oluşturulması planlanmaktadır. Projenin temel amacı, sadece LoRaWAN avantajlarını kullanmakla kalmayıp, aynı zamanda farklı protokollerin entegrasyonu ile geniş bir veri çeşitliliğini destekleyerek, kullanıcılara daha kapsamlı bir kontrol imkanı sunmak ve kullanıcıların bu kartları kendi ihtiyaçlarına göre özelleştirebilmesi, projenin katılımcılara özgün çözümler üretme potansiyelini güçlendirmektedir. Proje akış diyagramı Repo içerisinde verilmiştir.
+Temel amacı, çoklu haberleşme protokollerini destekleyerek özellikli bir kontrol kartı geliştirmek olan bu proje kapsamında, LoRaWAN'a benzer bir ağ yapısı kurularak, birden fazla iletişim kartı kullanılarak bir mesh ağı oluşturulması planlanmaktadır.Projenin amacı, sadece LoRaWAN avantajlarını kullanmakla kalmayıp, aynı zamanda farklı protokollerin entegrasyonu ile geniş bir veri çeşitliliğini destekleyerek, kullanıcılara daha kapsamlı bir kontrol imkanı sunmak ve kullanıcıların bu kartları kendi ihtiyaçlarına göre özelleştirebilmesi, projenin katılımcılara özgün çözümler üretme potansiyelini güçlendirmektedir. Proje akış diyagramı Repo içerisinde verilmiştir.
 
 ## Ana Özellikler
 
