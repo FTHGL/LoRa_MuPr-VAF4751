@@ -1,0 +1,65 @@
+$begin '$base_index$'
+  $begin 'properties'
+    all_levels=000000000000
+    time(year=000000002024, month=000000000005, day=000000000015, hour=000000000011, min=000000000035, sec=000000000000)
+    version=000000000000
+  $end 'properties'
+  $begin '$base_index$'
+    $index$(pos=000000001626, lin=000000000044, lvl=000000000000)
+  $end '$base_index$'
+$end '$base_index$'
+$begin 'SolutionBlock6'
+	SimSetupID=5
+	SimSetupName='LinearFrequency'
+	VersionID=24
+	DefaultSol=4
+$end 'SolutionBlock6'
+$begin 'SolutionBlock7'
+	SolutionName='LinearFrequency'
+	SolutionID=4
+	V=24
+	$begin 'States'
+		F(VID=6, Ver=24)
+	$end 'States'
+	$begin 'Definition'
+		SamplingInterpolation=false
+		Frequencies()
+		SolutionType=1
+		CenterFreq=0
+	$end 'Definition'
+	AlterName=''
+$end 'SolutionBlock7'
+$begin 'BlockMapName'
+	FileHeader='SolutionBlock1'
+	'SolutionKey(SimSetup=5, Instance=\'$feedlength=\\\'1mm\\\' $l=\\\'10mm\\\' $substratethick=\\\'0.80000000000000004mm\\\'\', Solution=4, VersionID=24)'='SolutionBlock5'
+	'SolutionKey(SimSetup=5, Instance=\'SetupDefinition\', Solution=-1, VersionID=24)'='SolutionBlock6'
+	'SolutionKey(SimSetup=5, Instance=\'SolutionDefinition\', Solution=4, VersionID=24)'='SolutionBlock7'
+$end 'BlockMapName'
+$begin 'SolutionBlock5'
+	VariationDataID=-1
+	File='DV6_S4_V24.cir'
+$end 'SolutionBlock5'
+$begin 'SolutionBlock1'
+	ProductName='Circuit Design'
+	CircuitName='Circuit1'
+	VersionID=24
+	PostProcess=false
+	LossLess=true
+	NextUniqueID=25
+	MoveBackwards=false
+	$begin 'VariationIDs'
+		Map(V='$feedlength=\'1mm\' $l=\'10mm\' $substratethick=\'0.80000000000000004mm\'', ID=6)
+	$end 'VariationIDs'
+$end 'SolutionBlock1'
+$begin '$index$'
+	$begin '$index$'
+		SolutionBlock5(pos=1216, lin=28, lvl=0)
+		SolutionBlock1(pos=1305, lin=32, lvl=0)
+		BlockMapName(pos=771, lin=22, lvl=0)
+		SolutionBlock7(pos=490, lin=7, lvl=0)
+		SolutionBlock6(pos=370, lin=1, lvl=0)
+		$base_index$(pos=0, lin=1, lvl=0)
+		$index$(pos=1626, lin=44, lvl=0)
+	$end '$index$'
+$end '$index$'
+                               

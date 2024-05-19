@@ -1,0 +1,64 @@
+$begin '$base_index$'
+  $begin 'properties'
+    all_levels=000000000000
+    time(year=000000002024, month=000000000004, day=000000000008, hour=000000000017, min=000000000003, sec=000000000018)
+    version=000000000000
+  $end 'properties'
+  $begin '$base_index$'
+    $index$(pos=000000001468, lin=000000000044, lvl=000000000000)
+  $end '$base_index$'
+$end '$base_index$'
+$begin 'SolutionBlock7'
+	VariationDataID=-1
+	File='DV5_S3_V31.cir'
+$end 'SolutionBlock7'
+$begin 'SolutionBlock8'
+	SimSetupID=4
+	SimSetupName='LinearFrequency'
+	VersionID=31
+	DefaultSol=3
+$end 'SolutionBlock8'
+$begin 'SolutionBlock9'
+	SolutionName='LinearFrequency'
+	SolutionID=3
+	V=31
+	$begin 'States'
+		F(VID=5, Ver=31)
+	$end 'States'
+	$begin 'Definition'
+		SamplingInterpolation=false
+		Frequencies()
+		SolutionType=1
+		CenterFreq=0
+	$end 'Definition'
+	AlterName=''
+$end 'SolutionBlock9'
+$begin 'BlockMapName'
+	FileHeader='SolutionBlock1'
+	'SolutionKey(SimSetup=4, Instance=\'\', Solution=3, VersionID=31)'='SolutionBlock7'
+	'SolutionKey(SimSetup=4, Instance=\'SetupDefinition\', Solution=-1, VersionID=31)'='SolutionBlock8'
+	'SolutionKey(SimSetup=4, Instance=\'SolutionDefinition\', Solution=3, VersionID=31)'='SolutionBlock9'
+$end 'BlockMapName'
+$begin 'SolutionBlock1'
+	ProductName='Circuit Design'
+	CircuitName='Circuit1'
+	VersionID=31
+	PostProcess=false
+	LossLess=true
+	NextUniqueID=32
+	MoveBackwards=false
+	$begin 'VariationIDs'
+		Map(V='', ID=5)
+	$end 'VariationIDs'
+$end 'SolutionBlock1'
+$begin '$index$'
+	$begin '$index$'
+		SolutionBlock7(pos=370, lin=1, lvl=0)
+		SolutionBlock1(pos=1220, lin=32, lvl=0)
+		BlockMapName(pos=860, lin=26, lvl=0)
+		SolutionBlock9(pos=579, lin=11, lvl=0)
+		SolutionBlock8(pos=459, lin=5, lvl=0)
+		$base_index$(pos=0, lin=1, lvl=0)
+		$index$(pos=1468, lin=44, lvl=0)
+	$end '$index$'
+$end '$index$'

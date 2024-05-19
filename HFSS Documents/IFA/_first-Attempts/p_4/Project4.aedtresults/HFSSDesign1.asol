@@ -1,0 +1,291 @@
+$begin '$base_index$'
+  $begin 'properties'
+    all_levels=000000000000
+    time(year=000000002024, month=000000000001, day=000000000011, hour=000000000009, min=000000000050, sec=000000000042)
+    version=000000000000
+  $end 'properties'
+  $begin '$base_index$'
+    $index$(pos=000000008845, lin=000000000269, lvl=000000000000)
+  $end '$base_index$'
+$end '$base_index$'
+$begin 'SolutionBlock1'
+	ProductName=''
+	CircuitName='HFSSDesign1'
+	VersionID=1960
+	PostProcess=false
+	LossLess=true
+	NextUniqueID=2475
+	MoveBackwards=false
+	$begin 'VariationIDs'
+		Map(V='', ID=65)
+	$end 'VariationIDs'
+	$begin 'LinkedDataList'
+	$end 'LinkedDataList'
+	$begin 'InitialMeshes'
+		M(VID=65, Ver=1960, Dir='DV65_V1960.imesh/')
+	$end 'InitialMeshes'
+	MeshAssemVersionID=86
+	$begin 'NextAssemVersionID'
+		NextUniqueID=87
+		MoveBackwards=false
+	$end 'NextAssemVersionID'
+	$begin 'DefinitionMeshes'
+		$begin 'DefMeshes_Comp-1'
+			DefinitionID=-1
+			VersionID=0
+			VIDMap('', 2379)
+			DM(VID=2379, Ver=0, Dir='NDV2379_V0.dmesh/')
+		$end 'DefMeshes_Comp-1'
+	$end 'DefinitionMeshes'
+	$begin 'MI'
+		$begin 'SubData'
+			ID=0
+			MI(VID=65, Ver=1960, Dir='DV65_MI0_V1960.sd/')
+		$end 'SubData'
+	$end 'MI'
+	VersionID2=0
+$end 'SolutionBlock1'
+$begin 'BlockMapName'
+	FileHeader='SolutionBlock1'
+	'SolutionKey(SimSetup=2139, Instance=\'SetupDefinition\', Solution=-1, VersionID=0)'='SolutionBlock68'
+	'SolutionKey(SimSetup=2139, Instance=\'SolutionDefinition\', Solution=2140, VersionID=0)'='SolutionBlock66'
+	'SolutionKey(SimSetup=2139, Instance=\'SolutionDefinition\', Solution=2141, VersionID=0)'='SolutionBlock67'
+	'SolutionKey(SimSetup=2139, Instance=\'SolutionDefinition\', Solution=2144, VersionID=0)'='SolutionBlock65'
+$end 'BlockMapName'
+$begin 'SolutionBlock68'
+	SimSetupID=2139
+	SimSetupName='Setup1'
+	VersionID=0
+	$begin 'EmConvergenceData'
+		EmConv(VID=65, Ver=0, EmConv='DV65_S2139_V0.EMConvData')
+	$end 'EmConvergenceData'
+	IsImported=false
+	IsTable=false
+	SolveSetupID=3
+	$begin 'CurrMeshes'
+		M(VID=65, Ver=0, Dir='DV65_S2139_V0.cmesh/')
+	$end 'CurrMeshes'
+	MeshAssemVersionID=0
+	$begin 'NextAssemVersionID'
+		NextUniqueID=1
+		MoveBackwards=false
+	$end 'NextAssemVersionID'
+	$begin 'ADP'
+		$begin 'SubData'
+			ID=7
+			ADP(VID=65, Ver=0, Dir='DV65_S2139_ADP7_V0.sd/')
+		$end 'SubData'
+	$end 'ADP'
+	$begin 'SU'
+		$begin 'SubData'
+			ID=1
+			SU(VID=65, Ver=0, File='DV65_S2139_SD1_V0.su')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=2
+			SU(VID=65, Ver=0, File='DV65_S2139_SD2_V0.su')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=3
+			SU(VID=65, Ver=0, File='DV65_S2139_SD3_V0.su')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=4
+			SU(VID=65, Ver=0, File='DV65_S2139_SD4_V0.su')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=5
+			SU(VID=65, Ver=0, File='DV65_S2139_SD5_V0.su')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=6
+			SU(VID=65, Ver=0, File='DV65_S2139_SD6_V0.su')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=7
+			SU(VID=65, Ver=0, File='DV65_S2139_SD7_V0.su')
+		$end 'SubData'
+	$end 'SU'
+	$begin 'WaveAdapt'
+		WA(VID=65, Ver=0, A=1)
+	$end 'WaveAdapt'
+	$begin 'LastPassNumbers'
+		LP(VID=65, Ver=0, P=7)
+	$end 'LastPassNumbers'
+	$begin 'Profiles'
+		P(VID=65, Ver=0, File='DV65_S2139_V0.profile')
+	$end 'Profiles'
+	$begin 'MI'
+		$begin 'SubData'
+			ID=0
+			MI(VID=65, Ver=0, Dir='DV65_S2139_MI0_V0.sd/')
+		$end 'SubData'
+	$end 'MI'
+$end 'SolutionBlock68'
+$begin 'SolutionBlock67'
+	SolutionName='LastAdaptive'
+	SolutionID=2141
+	V=0
+	$begin 'States'
+		F(VID=65, Ver=0)
+	$end 'States'
+	$begin 'Definition'
+		SamplingInterpolation=false
+		Frequencies(1200000000)
+		SolutionType=6
+		CenterFreq=0
+	$end 'Definition'
+	IsImported=false
+	IsTable=false
+	IsMatrixDataTable=false
+	SweepID=-1
+	KeepAllFastSweepFields=false
+	$begin 'M'
+		$begin 'SubData'
+			ID=0
+			M(VID=65, Ver=0, File='DV65_SOL2141_M0_V0.sd')
+		$end 'SubData'
+	$end 'M'
+	$begin 'Fields'
+		IDDblMap(2402, 1200000000)
+		$begin 'DataMap'
+			VID=65
+			Ver=0
+			F(DblID=2402, Dir='DV65_S2141_V0_F2402/')
+		$end 'DataMap'
+	$end 'Fields'
+$end 'SolutionBlock67'
+$begin 'SolutionBlock66'
+	SolutionName='AdaptivePass'
+	SolutionID=2140
+	V=0
+	$begin 'States'
+		F(VID=65, Ver=0)
+	$end 'States'
+	$begin 'Definition'
+		SamplingInterpolation=false
+		Frequencies(1200000000)
+		SolutionType=6
+		CenterFreq=0
+	$end 'Definition'
+	IsImported=false
+	IsTable=false
+	IsMatrixDataTable=false
+	SweepID=-1
+	KeepAllFastSweepFields=false
+	$begin 'M'
+		$begin 'SubData'
+			ID=1
+			M(VID=65, Ver=0, File='DV65_SOL2140_M1_V0.sd')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=2
+			M(VID=65, Ver=0, File='DV65_SOL2140_M2_V0.sd')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=3
+			M(VID=65, Ver=0, File='DV65_SOL2140_M3_V0.sd')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=4
+			M(VID=65, Ver=0, File='DV65_SOL2140_M4_V0.sd')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=5
+			M(VID=65, Ver=0, File='DV65_SOL2140_M5_V0.sd')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=6
+			M(VID=65, Ver=0, File='DV65_SOL2140_M6_V0.sd')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=7
+			M(VID=65, Ver=0, File='DV65_SOL2140_M7_V0.sd')
+		$end 'SubData'
+	$end 'M'
+$end 'SolutionBlock66'
+$begin 'SolutionBlock65'
+	SolutionName='Sweep'
+	SolutionID=2144
+	V=0
+	$begin 'States'
+		F(VID=65, Ver=0)
+	$end 'States'
+	$begin 'Definition'
+		SamplingInterpolation=false
+		Frequencies(600000000, 630000000, 660000000, 690000000, 720000000, 750000000, 780000000, 810000000, 840000000, 870000000, 900000000, 930000000, 960000000, 990000000, 1020000000, 1050000000, 1080000000, 1110000000, 1140000000, 1170000000, 1200000000, 1230000000, 1260000000, 1290000000, 1320000000, 1350000000, 1380000000, 1410000000, 1440000000, 1470000000, 1500000000, 1530000000, 1560000000, 1590000000, 1620000000, 1650000000, 1680000000, 1710000000, 1740000000, 1770000000, 1800000000)
+		SolutionType=6
+		CenterFreq=0
+	$end 'Definition'
+	IsImported=false
+	IsTable=false
+	IsMatrixDataTable=false
+	SweepID=0
+	KeepAllFastSweepFields=false
+	$begin 'M'
+		$begin 'SubData'
+			ID=0
+			M(VID=65, Ver=0, File='DV65_SOL2144_M0_V0.sd')
+		$end 'SubData'
+	$end 'M'
+	$begin 'SolverUsage'
+		IDDblMap(2427, 1800000000, 2428, 1770000000, 2429, 1740000000, 2430, 1710000000, 2431, 1680000000, 2432, 1650000000, 2433, 1620000000, 2434, 1590000000, 2435, 1560000000, 2436, 1530000000, 2437, 1500000000, 2438, 1470000000, 2439, 1440000000, 2440, 1410000000, 2441, 1380000000, 2442, 1350000000, 2443, 1320000000, 2444, 1290000000, 2445, 1260000000, 2446, 1230000000, 2447, 1170000000, 2448, 1140000000, 2449, 1110000000, 2450, 1080000000, 2451, 1050000000, 2452, 1020000000, 2453, 990000000, 2454, 960000000, 2455, 930000000, 2456, 900000000, 2457, 870000000, 2458, 840000000, 2459, 810000000, 2460, 780000000, 2461, 750000000, 2462, 720000000, 2463, 690000000, 2464, 660000000, 2465, 630000000, 2466, 600000000)
+		$begin 'DataMap'
+			VID=65
+			Ver=0
+			SU(DblID=2466, SU='DV65_S2144_V0_F2466_SU.txt')
+			SU(DblID=2465, SU='DV65_S2144_V0_F2465_SU.txt')
+			SU(DblID=2464, SU='DV65_S2144_V0_F2464_SU.txt')
+			SU(DblID=2463, SU='DV65_S2144_V0_F2463_SU.txt')
+			SU(DblID=2462, SU='DV65_S2144_V0_F2462_SU.txt')
+			SU(DblID=2461, SU='DV65_S2144_V0_F2461_SU.txt')
+			SU(DblID=2460, SU='DV65_S2144_V0_F2460_SU.txt')
+			SU(DblID=2459, SU='DV65_S2144_V0_F2459_SU.txt')
+			SU(DblID=2458, SU='DV65_S2144_V0_F2458_SU.txt')
+			SU(DblID=2457, SU='DV65_S2144_V0_F2457_SU.txt')
+			SU(DblID=2456, SU='DV65_S2144_V0_F2456_SU.txt')
+			SU(DblID=2455, SU='DV65_S2144_V0_F2455_SU.txt')
+			SU(DblID=2454, SU='DV65_S2144_V0_F2454_SU.txt')
+			SU(DblID=2453, SU='DV65_S2144_V0_F2453_SU.txt')
+			SU(DblID=2452, SU='DV65_S2144_V0_F2452_SU.txt')
+			SU(DblID=2451, SU='DV65_S2144_V0_F2451_SU.txt')
+			SU(DblID=2450, SU='DV65_S2144_V0_F2450_SU.txt')
+			SU(DblID=2449, SU='DV65_S2144_V0_F2449_SU.txt')
+			SU(DblID=2448, SU='DV65_S2144_V0_F2448_SU.txt')
+			SU(DblID=2447, SU='DV65_S2144_V0_F2447_SU.txt')
+			SU(DblID=2446, SU='DV65_S2144_V0_F2446_SU.txt')
+			SU(DblID=2445, SU='DV65_S2144_V0_F2445_SU.txt')
+			SU(DblID=2444, SU='DV65_S2144_V0_F2444_SU.txt')
+			SU(DblID=2443, SU='DV65_S2144_V0_F2443_SU.txt')
+			SU(DblID=2442, SU='DV65_S2144_V0_F2442_SU.txt')
+			SU(DblID=2441, SU='DV65_S2144_V0_F2441_SU.txt')
+			SU(DblID=2440, SU='DV65_S2144_V0_F2440_SU.txt')
+			SU(DblID=2439, SU='DV65_S2144_V0_F2439_SU.txt')
+			SU(DblID=2438, SU='DV65_S2144_V0_F2438_SU.txt')
+			SU(DblID=2437, SU='DV65_S2144_V0_F2437_SU.txt')
+			SU(DblID=2436, SU='DV65_S2144_V0_F2436_SU.txt')
+			SU(DblID=2435, SU='DV65_S2144_V0_F2435_SU.txt')
+			SU(DblID=2434, SU='DV65_S2144_V0_F2434_SU.txt')
+			SU(DblID=2433, SU='DV65_S2144_V0_F2433_SU.txt')
+			SU(DblID=2432, SU='DV65_S2144_V0_F2432_SU.txt')
+			SU(DblID=2431, SU='DV65_S2144_V0_F2431_SU.txt')
+			SU(DblID=2430, SU='DV65_S2144_V0_F2430_SU.txt')
+			SU(DblID=2429, SU='DV65_S2144_V0_F2429_SU.txt')
+			SU(DblID=2428, SU='DV65_S2144_V0_F2428_SU.txt')
+			SU(DblID=2427, SU='DV65_S2144_V0_F2427_SU.txt')
+		$end 'DataMap'
+	$end 'SolverUsage'
+$end 'SolutionBlock65'
+$begin '$index$'
+	$begin '$index$'
+		BlockMapName(pos=1212, lin=38, lvl=0)
+		SolutionBlock66(pos=3981, lin=148, lvl=0)
+		SolutionBlock67(pos=3326, lin=115, lvl=0)
+		SolutionBlock65(pos=5039, lin=197, lvl=0)
+		SolutionBlock68(pos=1714, lin=45, lvl=0)
+		SolutionBlock1(pos=370, lin=1, lvl=0)
+		$base_index$(pos=0, lin=1, lvl=0)
+		$index$(pos=8845, lin=269, lvl=0)
+	$end '$index$'
+$end '$index$'
+                                                                                                                                                                                                                          

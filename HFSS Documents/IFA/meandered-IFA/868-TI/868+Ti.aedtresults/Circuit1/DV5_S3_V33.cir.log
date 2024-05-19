@@ -1,0 +1,20 @@
+(status): Nexxim version: 2023.2.0 WIN64, build time: May 16 2023, 23:37:21
+
+(status): Analyzing C:/Users/fthgl/Documents/Ansoft/yeni/868-TI/868+Ti.aedtresults/Circuit1/temp/DV5_S3_V33.cir.
+(info): Processing circuit for new analysis.
+omp(status): Requested number of threads in UI setting is 1
+circuit_details(status): Total device types: 4
+device type                                       number of devices
+----------------------------------------------------------------------
+capacitor                                         1
+field_solver_cosim                                1
+inductor                                          1
+port_impedance                                    1
+(status): License checkout took 0.594 seconds.
+models:field_solver_cosim(warning): fieldsolver:7 - There are LNA frequency points outside fleldsolver range. Due to extrapolation inaccuracies may occur.
+models:field_solver_cosim(status): fieldsolver:7 - Cosimulation data transfer complete. Number of freq points = 392.
+(info): Starting analysis type LNA.
+analysis:dc(status): Total DC newton iterations = 4, DC conv = 1.
+(status): LNA cpu time = 0.029
+(info): Simulation succeeded. Total simulator time: 0:00:01
+(status): Start Time:  04/08/2024 16:20:19, End Time:  04/08/2024 16:20:20, Host DESKTOP-51UAIET, 

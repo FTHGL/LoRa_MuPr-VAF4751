@@ -1,0 +1,8 @@
+           |     Num Tets | Min edge length | Max edge length | RMS edge length |     Min tet vol |     Max tet vol |    Mean tet vol |  Std Devn (vol)
+        18 |           26 |         34.5084 |         70.9732 |         62.1052 |            5.98 |          152.72 |         73.2462 |         54.5904
+       118 |          101 |         9.61368 |         124.392 |         78.5209 |         1.66111 |         20531.8 |         2477.13 |          4417.6
+         0 |          108 |         72.6346 |         136.831 |         100.423 |           47.61 |         12709.8 |         1902.38 |         3477.76
+NumTotalTets 235
+NumBkTets 108
+User_Units mm
+mesh_fileset_version 2

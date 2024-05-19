@@ -1,0 +1,6 @@
+IsBigEndian false
+$begin 'ManagedFiles'
+	ValidationCache[1: 'HDR21E113296170489070817.tmp']
+	radfld[1: 'RAD15EA13536170488977012.tmp']
+	svcache[2: 'HDR15EA13536170488977013.tmp', 'min60BD7740170495584212.tmp']
+$end 'ManagedFiles'

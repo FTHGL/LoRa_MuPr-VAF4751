@@ -1,0 +1,17 @@
+(status): Nexxim version: 2023.2.0 WIN64, build time: May 16 2023, 23:37:21
+
+(status): Analyzing C:/Users/fthgl/Documents/Ansoft/Hfss Doc/Transmission Line/TL8/TL8.aedtresults/Circuit1/temp/DV7_S5_V0.cir.
+(info): Processing circuit for new analysis.
+omp(status): Requested number of threads in UI setting is 1
+circuit_details(status): Total device types: 2
+device type                                       number of devices
+----------------------------------------------------------------------
+field_solver_cosim                                1
+port_impedance                                    2
+(status): License checkout took 0.579 seconds.
+models:field_solver_cosim(status): fieldsolver:3 - Cosimulation data transfer complete. Number of freq points = 401.
+(info): Starting analysis type LNA.
+analysis:dc(status): Total DC newton iterations = 4, DC conv = 1.
+(status): LNA cpu time = 0.021
+(info): Simulation succeeded. Total simulator time: 0:00:01
+(status): Start Time:  05/19/2024 14:57:24, End Time:  05/19/2024 14:57:25, Host DESKTOP-51UAIET, 

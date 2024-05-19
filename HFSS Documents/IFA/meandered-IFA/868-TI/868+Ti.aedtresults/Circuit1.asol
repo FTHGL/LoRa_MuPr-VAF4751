@@ -1,0 +1,64 @@
+$begin '$base_index$'
+  $begin 'properties'
+    all_levels=000000000000
+    time(year=000000002024, month=000000000004, day=000000000008, hour=000000000016, min=000000000026, sec=000000000049)
+    version=000000000000
+  $end 'properties'
+  $begin '$base_index$'
+    $index$(pos=000000001563, lin=000000000044, lvl=000000000000)
+  $end '$base_index$'
+$end '$base_index$'
+$begin 'SolutionBlock1'
+	ProductName='Circuit Design'
+	CircuitName='Circuit1'
+	VersionID=33
+	PostProcess=false
+	LossLess=true
+	NextUniqueID=34
+	MoveBackwards=false
+	$begin 'VariationIDs'
+		Map(V='$F=\'24.073176762377699mm\' $l6=\'1mm\'', ID=5)
+	$end 'VariationIDs'
+$end 'SolutionBlock1'
+$begin 'BlockMapName'
+	FileHeader='SolutionBlock1'
+	'SolutionKey(SimSetup=4, Instance=\'$F=\\\'24.073176762377699mm\\\' $l6=\\\'1mm\\\'\', Solution=3, VersionID=33)'='SolutionBlock13'
+	'SolutionKey(SimSetup=4, Instance=\'SetupDefinition\', Solution=-1, VersionID=33)'='SolutionBlock14'
+	'SolutionKey(SimSetup=4, Instance=\'SolutionDefinition\', Solution=3, VersionID=33)'='SolutionBlock15'
+$end 'BlockMapName'
+$begin 'SolutionBlock15'
+	SolutionName='LinearFrequency'
+	SolutionID=3
+	V=33
+	$begin 'States'
+		F(VID=5, Ver=33)
+	$end 'States'
+	$begin 'Definition'
+		SamplingInterpolation=false
+		Frequencies()
+		SolutionType=1
+		CenterFreq=0
+	$end 'Definition'
+	AlterName=''
+$end 'SolutionBlock15'
+$begin 'SolutionBlock14'
+	SimSetupID=4
+	SimSetupName='LinearFrequency'
+	VersionID=33
+	DefaultSol=3
+$end 'SolutionBlock14'
+$begin 'SolutionBlock13'
+	VariationDataID=-1
+	File='DV5_S3_V33.cir'
+$end 'SolutionBlock13'
+$begin '$index$'
+	$begin '$index$'
+		SolutionBlock13(pos=1472, lin=40, lvl=0)
+		SolutionBlock1(pos=370, lin=1, lvl=0)
+		BlockMapName(pos=657, lin=13, lvl=0)
+		SolutionBlock15(pos=1067, lin=19, lvl=0)
+		SolutionBlock14(pos=1350, lin=34, lvl=0)
+		$base_index$(pos=0, lin=1, lvl=0)
+		$index$(pos=1563, lin=44, lvl=0)
+	$end '$index$'
+$end '$index$'
