@@ -1,0 +1,33 @@
+(status): Nexxim version: 2023.2.0 WIN64, build time: May 16 2023, 23:37:21
+
+(status): Analyzing C:/Users/fthgl/Documents/Ansoft/stripline/1/COPSTRP1.aedtresults/Circuit1/temp/DV49_S133_V474.cir.
+(info): Processing circuit for new analysis.
+omp(status): Requested number of threads in UI setting is 1
+circuit_details(status): Total device types: 5
+device type                                       number of devices
+----------------------------------------------------------------------
+capacitor                                         2
+field_solver_cosim                                1
+inductor                                          2
+port_impedance                                    2
+resistor                                          2
+(status): License checkout took 0.517 seconds.
+models:field_solver_cosim(warning): fieldsolver:3 - There are LNA frequency points outside fleldsolver range. Due to extrapolation inaccuracies may occur.
+models:field_solver_cosim(status): fieldsolver:3 - Cosimulation data transfer complete. Number of freq points = 294.
+models:s_element(warning): fieldsolver:3.s - S-parameter data  is not passive. Worst violation of 0.029802 at 1.364e+09 (Hz).
+diagnostics(warning): No DC path to ground from node unconnected1.
+(status): Reached the limit (1) for maximum number of warning messages in message manager.
+(info): See simulation logfile for a complete list of warning messages.
+diagnostics(warning): No DC path to ground from node unconnected0.
+diagnostics(warning): No DC path to ground from node x28.net_1.
+diagnostics(warning): No DC path to ground from node x28.net_2.
+diagnostics(warning): Only one connection for node unconnected1.
+diagnostics(warning): Only one connection for node unconnected0.
+(info): Starting analysis type LNA.
+analysis:dc(status): Total DC newton iterations = 4, DC conv = 1.
+analysis:small_signal(status): Detected 6 floating nodes
+analysis:small_signal(status): Setting beta to 1e-12. The default is 0. Use .option small_signal.beta=value to change to value
+analysis:small_signal:lna(warning): Z parameters invalid due to singularity that may be caused by floating nodes/ports.
+(status): LNA cpu time = 0.011
+(info): Simulation succeeded. Total simulator time: 0:00:01
+(status): Start Time:  05/23/2024 19:33:47, End Time:  05/23/2024 19:33:48, Host DESKTOP-51UAIET, 
