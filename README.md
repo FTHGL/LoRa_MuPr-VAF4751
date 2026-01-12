@@ -1,27 +1,34 @@
-# STM32 Tabanlı Çoklu Haberleşme Protokollerine Sahip Programlanabilir Kontrol Kartı (LoRa_MuPr-VAF4751)
+# Multi-Protocol Hybrid Wireless Communication System (LoRa-GSM-DTMF)
+![STM32](https://img.shields.io/badge/STM32-F103C8T6-blue.svg)
+![LoRa](https://img.shields.io/badge/LoRa-RN2483A-orange.svg)
+![GSM](https://img.shields.io/badge/GSM-SIM800C-red.svg)
 
-Temel amacı, çoklu haberleşme protokollerini destekleyerek özellikli bir kontrol kartı geliştirmek olan bu proje kapsamında, LoRaWAN'a benzer bir ağ yapısı kurularak, birden fazla iletişim kartı kullanılarak bir mesh ağı oluşturulması planlanmaktadır.Projenin amacı, sadece LoRaWAN avantajlarını kullanmakla kalmayıp, aynı zamanda farklı protokollerin entegrasyonu ile geniş bir veri çeşitliliğini destekleyerek, kullanıcılara daha kapsamlı bir kontrol imkanı sunmak ve kullanıcıların bu kartları kendi ihtiyaçlarına göre özelleştirebilmesi, projenin katılımcılara özgün çözümler üretme potansiyelini güçlendirmektedir. Proje akış diyagramı Repo içerisinde verilmiştir.
+An **STM32-based hybrid communication platform** designed for seamless data and command transmission in environments with limited or no internet infrastructure (disaster management, rural IoT, remote monitoring or etc.). This system integrates low-power **LoRa** technology with **GSM** coverage and **DTMF** control into a single modular architecture.
 
-## Ana Özellikler
+## Technical Architecture
+The system utilizes a hybrid topology consisting of a **Master** node and multiple **Slave** nodes:
 
-- **Çoklu Haberleşme Protokollerini Destekleme:** LoRaWAN'a ek olarak, farklı haberleşme protokollerini de entegre etme olanağı.
-
-- **Mesh Ağı Oluşturma:** Birden fazla iletişim kartı kullanılarak mesh ağı kurma yeteneği.
-
-- **Geniş Veri Çeşitliliği:** Farklı protokollerin entegrasyonu ile geniş bir veri çeşitliliğini destekleme.
-
-- **Özelleştirilebilirlik:** Kullanıcıların kartları kendi ihtiyaçlarına göre özelleştirebilme yeteneği.
-
-# Programmable Control Board with STM32-based Multiple Communication Protocols (LoRa_MuPr-VAF4751)
-
-This project aims to develop a feature-rich control board by supporting multiple communication protocols. Within the scope of the project, a network structure similar to LoRaWAN will be established, and a mesh network will be created using multiple communication cards. The primary goal of the project is not only to leverage the advantages of LoRaWAN but also to support a wide variety of data by integrating different protocols, providing users with a more comprehensive control capability. Additionally, allowing users to customize these boards according to their needs strengthens the project's potential to offer unique solutions to participants.
+* **Master Node:** Features an STM32F103C8T6 MCU, SIM800C GSM module, and RN2483A LoRa module. It acts as the network gateway and central authority.
+* **Slave Nodes:** Composed of STM32F103C8T6 and RN2483A modules. These nodes collect sensor data and transmit it to the Master via LoRa.
+* **Hybrid Topology:** Operates in a "Star" configuration under normal conditions, with a dynamic shift to a "Mesh" structure using nodes as opportunistic relays when direct access is obstructed.
 
 ## Key Features
+* **Protocol Bridging:** Real-time translation of commands received via SMS or Command (DTMF) into LoRa packets for end-node execution.
+* **Fault Tolerance:** Dynamic routing mechanism allowing slave nodes to reach the master through neighboring nodes if the direct link is lost.
+* **Critical Control (DTMF):** Infrastructure-independent device management via voice calls and DTMF tones, bypassing the need for internet or SMS data lines.
+* **RF Optimization:** Impedance-controlled transmission lines (50 Ω) and custom antenna structures optimized for 868 MHz and 1.8 GHz bands.
 
-- **Support for Multiple Communication Protocols:** In addition to LoRaWAN, the ability to integrate different communication protocols.
+## Hardware Specifications
+* **MCU:** STM32F103C8T6 (ARM Cortex-M3).
+* **RF Modules:** Microchip RN2483A (LoRa), SIMCom SIM800C (GSM/GPRS/DTMF).
+* **Antenna Design:** Integrated IFA (Inverted-F Antenna) for 868 MHz and optimized microstrip structures for 1.8 GHz.
+* **PCB Design:** High RF integrity with dedicated ground planes and impedance-matched traces.
 
-- **Mesh Network Formation:** The ability to create a mesh network using multiple communication cards.
+## Software Flow
+The firmware is modular, managing cross-protocol data flow and task scheduling:
+1.  **Ingress:** Command reception and validation via GSM (SMS/DTMF).
+2.  **Routing:** Identification of the target `node_id` and LoRa packet encapsulation.
+3.  **Transmission:** Delivery of data to the slave node and reporting the response (ACK/Data) back to the user via GSM.
 
-- **Wide Data Variety:** Support for a wide variety of data through the integration of different protocols.
-
-- **Customizability:** The ability for users to customize the boards according to their needs.
+---
+*This project was developed as a Graduation Project at Konya Technical University, Department of Electrical and Electronics Engineering.*
